@@ -1,0 +1,33 @@
+{
+	"Name": "gcCarRadio",
+	"ArtifactId": "carradio",
+	"GroupId": "com.growcontrol.client",
+	"Version": "3.6.1",
+	"URL": "http://poixson.com",
+	"Github-Path": "GrowControl/gcCarRadio",
+	"Org-Name": "PoiXson",
+	"Main-Class": "com.growcontrol.client.carradio.Main",
+	"Shade": "yes",
+	"Deps": {
+		"pxnCommon": {
+			"GroupId": "com.poixson",
+			"ArtifactId": "common",
+			"Name": "pxnCommon",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		},
+		"gcServer": {
+			"GroupId": "com.growcontrol",
+			"ArtifactId": "server",
+			"Name": "gcServer",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		},
+		"gcClient": {
+			"GroupId": "com.growcontrol",
+			"ArtifactId": "client",
+			"Name": "gcClient",
+			"Version": "${project.version}"
+		}
+	}
+}
